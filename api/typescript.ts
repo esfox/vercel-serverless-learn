@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { DB } from '../db';
+import { DB } from '../db/typescript';
 
 export default async (request: VercelRequest, response: VercelResponse) =>
 {
