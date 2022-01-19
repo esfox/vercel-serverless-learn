@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": "vercel dev --listen 1902",
-    "build": "node migrate"
+    "setup": "npm install && node migrate"
   },
   "devDependencies": {
     "@vercel/node": "^1.12.1",
