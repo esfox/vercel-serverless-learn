@@ -1,0 +1,16 @@
+{
+  "name": "vercel-serverless-sqlite-learn",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "vercel dev --listen 1902",
+    "build": "node migrate"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.12.1",
+    "vercel": "^23.1.2"
+  },
+  "dependencies": {
+    "better-sqlite3": "^7.4.6",
+    "knex": "^1.0.1"
+  }
+}
