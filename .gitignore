@@ -1,3 +1,2 @@
 .vercel
-*.sqlite
 node_modules
