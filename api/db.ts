@@ -18,13 +18,21 @@ export default async (request: VercelRequest, response: VercelResponse) =>
 
 async function get(request: VercelRequest, response: VercelResponse)
 {
-  const data = await DB.properties();
-  response.status(200).send(data);
+  try
+  {
+    const data = await DB.things();
+    response.status(200).send(data);
+  }
+  catch(error)
+  {
+    console.log(error);
+    response.status(500).send('');
+  }
 }
 
 async function post(request: VercelRequest, response: VercelResponse)
 {
-  const [data] = await DB.properties()
+  const [data] = await DB.things()
     .insert(request.body)
     .returning('*');
 
