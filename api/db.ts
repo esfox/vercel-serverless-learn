@@ -1,6 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { DB } from '../db';
 
+//
 export default async (request: VercelRequest, response: VercelResponse) =>
 {
   switch(request.method)
